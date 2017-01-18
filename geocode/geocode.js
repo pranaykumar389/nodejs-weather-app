@@ -14,10 +14,10 @@ var geocodeAddress = (address, callback) => {
         }else if (body.status === 'ZERO_RESULTS') {
             callback('Unable to find the Address');
         }else if (body.status === 'OK') {
-            callback({
-                Address: body.results[0].formatted_address,
-                Latitude: body.results[0].geometry.location.lat,
-                Longitude: body.results[0].geometry.location.lng
+            callback(undefined, {
+                address: body.results[0].formatted_address,
+                latitude: body.results[0].geometry.location.lat,
+                longitude: body.results[0].geometry.location.lng
             });
         }
     });

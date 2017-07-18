@@ -10,16 +10,13 @@ Install Dependencies
 npm install 
 ```
 
-To Run the application
-```bash
-npm start
-```
-
 ## Example Usage
 
 ```bash
 node server -a san francisco, ca
 ```
+
+#Output
 
 ```output
 It's currently 72.87. It feels like 73.39
